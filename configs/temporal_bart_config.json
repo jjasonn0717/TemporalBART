@@ -1,0 +1,121 @@
+{
+    "dataset_reader": {
+        "type": "event_seq2seq_transformer_reader",
+        "event_del_prob": 0.15,
+        "lazy": false,
+        "length_limit": 768,
+        "max_instances": null,
+        "source_format": "ARGS",
+        "source_prefix": "<s>",
+        "target_format": "V_ARGS",
+        "target_prefix": "<s>",
+        "target_suffix": "",
+        "test_mode": false,
+        "tokenizer_kwargs": {
+            "additional_special_tokens": [
+                "<ARGS>",
+                "<EVENT>"
+            ]
+        },
+        "tokenizer_model_name": "facebook/bart-large",
+        "truncation_strategy": "longest_first"
+    },
+    "model": {
+        "type": "event_lm_transformer_seq2seq",
+        "decode_kwargs": {
+            "do_sample": false,
+            "early_stopping": true,
+            "max_length": 375,
+            "min_length": 10,
+            "num_beams": 4
+        },
+        "dropout": 0.1,
+        "extra_metrics": {
+            "event_cov": "event_coverage"
+        },
+        "seq2seq_generator": {
+            "attention_dropout": 0,
+            "transformer_name": "facebook/bart-large"
+        },
+        "tokenizer_kwargs": {
+            "additional_special_tokens": [
+                "<ARGS>",
+                "<EVENT>"
+            ]
+        },
+        "transformer_name": "facebook/bart-large"
+    },
+    "train_data_path": "./released_data_models/data/train/KB_arg_overlap_chains_seqdata_scrambled2_train100000.pkl",
+    "validation_data_path": "./released_data_models/data/train/KB_arg_overlap_chains_seqdata_scrambled2_valid.pkl",
+    "test_data_path": "./released_data_models/data/eval/caters_entity_chains_seqdata_scrambled2.pkl",
+    "trainer": {
+        "checkpointer": {
+            "num_serialized_models_to_keep": 1
+        },
+        "cuda_device": 0,
+        "grad_norm": 1,
+        "learning_rate_scheduler": {
+            "type": "polynomial_decay",
+            "num_epochs": 50,
+            "num_steps_per_epoch": 2000,
+            "warmup_steps": 500
+        },
+        "num_epochs": 10,
+        "num_gradient_accumulation_steps": 8,
+        "optimizer": {
+            "type": "adamw",
+            "amsgrad": false,
+            "betas": [
+                0.9,
+                0.999
+            ],
+            "eps": 1e-08,
+            "lr": 1e-05,
+            "weight_decay": 0.01
+        },
+        "patience": 10,
+        "tensorboard_writer": {
+            "should_log_learning_rate": true,
+            "summary_interval": 4
+        },
+        "validation_metric": "+pairwise_acc"
+    },
+    "data_loader": {
+        "batch_sampler": {
+            "type": "bucket",
+            "batch_size": 8
+        },
+        "batches_per_epoch": 16000
+    },
+    "evaluate_on_test": true,
+    "numpy_seed": null,
+    "pytorch_seed": null,
+    "random_seed": null,
+    "validation_data_loader": {
+        "batch_sampler": {
+            "type": "bucket",
+            "batch_size": 16
+        }
+    },
+    "validation_dataset_reader": {
+        "type": "event_seq2seq_transformer_reader",
+        "event_del_prob": 0.15,
+        "lazy": false,
+        "length_limit": 768,
+        "max_instances": null,
+        "source_format": "ARGS",
+        "source_prefix": "<s>",
+        "target_format": "V_ARGS",
+        "target_prefix": "<s>",
+        "target_suffix": "",
+        "test_mode": false,
+        "tokenizer_kwargs": {
+            "additional_special_tokens": [
+                "<ARGS>",
+                "<EVENT>"
+            ]
+        },
+        "tokenizer_model_name": "facebook/bart-large",
+        "truncation_strategy": "longest_first"
+    }
+}
