@@ -8,6 +8,7 @@ The source code for the paper "[Conditional Generation of Temporally-ordered Eve
 - allennlp 1.1.0
 - transformers 3.0.2
 - rouge-score
+- graphviz
 
 ## Data
 

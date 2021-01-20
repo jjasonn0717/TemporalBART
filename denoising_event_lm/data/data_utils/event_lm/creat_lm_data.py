@@ -8,8 +8,7 @@ from itertools import permutations
 from tqdm import tqdm
 import random
 import math
-sys.path.append('/scratch/cluster/j0717lin/temporal')
-from my_library.utils.utils import read_data
+from denoising_event_lm.utils.utils import read_data
 
 
 def get_finetune_data(all_seqs, num_finetune):
