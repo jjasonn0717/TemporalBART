@@ -12,8 +12,8 @@ from tqdm import tqdm
 from collections import defaultdict
 from graphviz import Digraph
 import bisect
-sys.path.append('/scratch/cluster/j0717lin/temporal')
-from my_library.utils.utils import read_data
+
+from denoising_event_lm.utils.utils import read_data
 
 
 
