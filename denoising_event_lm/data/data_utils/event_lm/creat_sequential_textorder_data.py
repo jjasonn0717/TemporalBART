@@ -8,11 +8,11 @@ from itertools import permutations
 from tqdm import tqdm
 import random
 import math
-sys.path.append('/scratch/cluster/j0717lin/temporal')
-from my_library.utils.utils import read_data
-from my_library.data.dataset_readers.events_lm.creat_lm_data import read_chains, get_neg_seq, print_stat, get_textorder_label, print_stat_with_posneg, print_stat_chainlen
-from my_library.data.dataset_readers.events_lm.creat_lm_data import create_seqs_data_from_matched_chains
-from my_library.data.dataset_readers.events_lm.creat_lm_data import create_seqs_data_from_KB_chains
+
+from denoising_event_lm.utils.utils import read_data
+from denoising_event_lm.data.data_utils.event_lm.creat_lm_data import read_chains, get_neg_seq, print_stat, get_textorder_label, print_stat_with_posneg, print_stat_chainlen
+from denoising_event_lm.data.data_utils.event_lm.creat_lm_data import create_seqs_data_from_matched_chains
+from denoising_event_lm.data.data_utils.event_lm.creat_lm_data import create_seqs_data_from_KB_chains
 
 
 def get_textorder_perm(varg_seq):
