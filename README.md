@@ -4,6 +4,7 @@ The source code for the paper "[Conditional Generation of Temporally-ordered Eve
 
 ## Requirements
 
+- torch 1.6.0
 - allennlp 1.1.0
 - transformers 3.0.2
 - rouge-score
