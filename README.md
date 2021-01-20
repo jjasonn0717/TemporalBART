@@ -9,6 +9,8 @@ The source code for the paper "[Conditional Generation of Temporally-ordered Eve
 - transformers 3.0.2
 - rouge-score
 - graphviz
+- lemminflect
+- pandas
 
 ## Data
 
