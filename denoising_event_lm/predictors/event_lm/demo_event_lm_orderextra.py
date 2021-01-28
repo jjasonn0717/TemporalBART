@@ -35,7 +35,7 @@ BATCH_SIZE = 16
 
 WORD_TOKENIZER = SpacyTokenizer(pos_tags=False, keep_spacy_tokens=False)
 
-with open(os.path.join(os.getcwd(), "../data/EventsNarratives/event_knowledge_2.0/processed/all_docs_vocab.pkl"), 'rb') as f:
+with open(os.path.join(os.getcwd(), "released_data_models/data/KB_all_docs_vocab.pkl"), 'rb') as f:
     VOCAB_CNTS = pickle.load(f)
     VOCAB_CNTS = {k: v for k, v in VOCAB_CNTS.items() if v > 0}
     TOTAL_VOCAB_CNTS = sum(v for k, v in VOCAB_CNTS.items())
