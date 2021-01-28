@@ -16,4 +16,4 @@ RUN gdown "https://drive.google.com/uc?id=1z2V1_YUegKWVXjvaEyR0T-G_4AVAz6Ja"  # 
 
 COPY . .
 
-ENTRYPOINT /bin/bash
+ENTRYPOINT ["/bin/bash"]
