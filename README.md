@@ -60,5 +60,5 @@ python3 denoising_event_lm/predictors/event_lm/test_demo_event_lm_orderextra.py 
 ## Model Checkpoints
 
 The final models used in our paper can be downloaded with the following links:
-- [TemporalBART](https://drive.google.com/file/d/1SdSrGhB4KMWIMzbD42GobKQmKPOIuRKL/view?usp=sharing)
-- [TemporalBART-indexed](https://drive.google.com/file/d/1zYfYb-vLGBsXEu9rZ6KD3J5xC6mO3SVI/view?usp=sharing)
+- [TemporalBART](https://drive.google.com/file/d/1PWOW1Qnx3AGsdn_vDpXI_sNr7Vq5gDEY/view?usp=share_link)
+- [TemporalBART-indexed](https://drive.google.com/file/d/1bWfoNJlCsvsqtEQpT2QFmfqx-fjIesg9/view?usp=share_link)
