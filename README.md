@@ -16,7 +16,7 @@ The source code for the paper "[Conditional Generation of Temporally-ordered Eve
 
 In this work, we specifically collect our training data from the [EventsNarratives](https://www.aclweb.org/anthology/P18-1050/) corpus, and evaluate our models in a zero-shot manner on CaTeRS and MCTaco dataset.
 
-- The preprocessed training data can be downloaded from [here](https://drive.google.com/drive/folders/1Cyxi8meJ6TjeayVrnAeerN9FF7pnhyos?usp=sharing), where the 100K version is used for our best models.
+- The preprocessed training data can be downloaded from [here](https://drive.google.com/drive/folders/13QfkpdFQQ2ZeN11s-KZmKtg0YLjIC3HA?usp=sharing), where the 100K version is used for our best models.
 
 - The preprocessed evaluation data can be found here: [CaTeRS](https://drive.google.com/file/d/1EMphcjnvasOstMVVp1ZEZ05xNFMZ65sY/view?usp=sharing), [MCTaco](https://drive.google.com/file/d/1r3ZD8P4fCFvkE_4bNAlBlvOjOtEW45t6/view?usp=sharing)
 
