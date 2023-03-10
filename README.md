@@ -18,7 +18,7 @@ In this work, we specifically collect our training data from the [EventsNarrativ
 
 - The preprocessed training data can be downloaded from [here](https://drive.google.com/drive/folders/1Cyxi8meJ6TjeayVrnAeerN9FF7pnhyos?usp=sharing), where the 100K version is used for our best models.
 
-- The preprocessed evaluation data can be found here: [CaTeRS](https://drive.google.com/file/d/1cEjt6Skb0Nnmy2a6XWEL6zVI57idT-Bj/view?usp=sharing), [MCTaco](https://drive.google.com/file/d/1z2V1_YUegKWVXjvaEyR0T-G_4AVAz6Ja/view?usp=sharing)
+- The preprocessed evaluation data can be found here: [CaTeRS](https://drive.google.com/file/d/1EMphcjnvasOstMVVp1ZEZ05xNFMZ65sY/view?usp=sharing), [MCTaco](https://drive.google.com/file/d/1r3ZD8P4fCFvkE_4bNAlBlvOjOtEW45t6/view?usp=sharing)
 
 ## Training
 
@@ -60,5 +60,5 @@ python3 denoising_event_lm/predictors/event_lm/test_demo_event_lm_orderextra.py 
 ## Model Checkpoints
 
 The final models used in our paper can be downloaded with the following links:
-- [TemporalBART](https://drive.google.com/file/d/1PWOW1Qnx3AGsdn_vDpXI_sNr7Vq5gDEY/view?usp=share_link)
-- [TemporalBART-indexed](https://drive.google.com/file/d/1bWfoNJlCsvsqtEQpT2QFmfqx-fjIesg9/view?usp=share_link)
+- [TemporalBART](https://drive.google.com/file/d/1IPep1Su1xvMJ52MlkUOAnrO9ewubtyBm/view?usp=sharing)
+- [TemporalBART-indexed](https://drive.google.com/file/d/10fakzsWzK4JR5FKxHkRbDG3PUTfGxOUu/view?usp=sharing)
